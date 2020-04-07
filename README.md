@@ -11,5 +11,18 @@ Working Operating System:
         SPIM Simulator
 
 HW 1 -> Shell Program runs Linear Search, Binary Search, Show Divisible Numbers and Selection Sort Programs
+        
+        In spim directory to run:
+        sudo make install
+        ./spim -file asm/Shell.asm
+        
+        When the shell is openned enter the test assembly files with their path.
 
 HW 2 -> Three Different Strategy of Microkernel using Round Robin Scheduler
+
+        In spim directory to run:
+        sudo make install
+        ./spim -file SPIMOS_GTU_1.s
+        ./spim -file SPIMOS_GTU_2.s
+        ./spim -file SPIMOS_GTU_3.s
+        
