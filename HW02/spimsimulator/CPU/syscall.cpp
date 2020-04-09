@@ -123,6 +123,16 @@ void windowsParameterHandlingControl(int flag )
 /*You implement your handler here*/
 void SPIM_timerHandler()
 {
+    int i;
+    write_output (console_out, "\n! INTERRUPT !\n\n");
+    for (i = 0; i < 32; ++i)
+        write_output(console_out,"REG[%d] -> %d\n",i,R[i]);
+
+    write_output(console_out,"HI -> %d\n",HI);
+    write_output(console_out,"LO -> %d\n",LO);
+    write_output(console_out,"PC -> %d\n",PC);
+    write_output(console_out,"Stack Pointer Address -> %d\n\n",R[29]);
+   
     if (whichKernel == 0)
     {
         if (R[REG_V0] == 22 && ++endCounter == 3)
