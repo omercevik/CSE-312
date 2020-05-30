@@ -1,0 +1,20 @@
+./fileSystemOper fileSystem.data mkdir "/usr"
+./fileSystemOper fileSystem.data mkdir "/usr/ysa"
+./fileSystemOper fileSystem.data mkdir "/bin/ysa"
+./fileSystemOper fileSystem.data write "/usr/ysa/file1" fileSystem.cpp
+./fileSystemOper fileSystem.data write "/usr/file2" Makefile
+./fileSystemOper fileSystem.data write "/file3" Makefile
+./fileSystemOper fileSystem.data list "/"
+./fileSystemOper fileSystem.data del "/usr/ysa/file1"
+./fileSystemOper fileSystem.data dumpe2fs
+./fileSystemOper fileSystem.data read "/usr/file2" linuxFile2.data
+cmp linuxFile2.data Makefile
+./fileSystemOper fileSystem.data list "/usr"
+./fileSystemOper fileSystem.data write "/usr/linkedfile2" Makefile
+./fileSystemOper fileSystem.data dumpe2fs
+./fileSystemOper fileSystem.data list "/usr"
+./fileSystemOper fileSystem.data del "/usr/file2"
+./fileSystemOper fileSystem.data list "/usr"
+./fileSystemOper fileSystem.data rmdir "/"
+./fileSystemOper fileSystem.data dumpe2fs
+./fileSystemOper fileSystem.data list "/"
