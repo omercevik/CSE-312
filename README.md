@@ -26,3 +26,6 @@ HW 2 -> Three Different Strategy of Microkernel using Round Robin Scheduler
         ./spim -file SPIMOS_GTU_2.s
         ./spim -file SPIMOS_GTU_3.s
         
+Midterm -> File System
+        
+        make (Part 3)
