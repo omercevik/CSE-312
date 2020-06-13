@@ -29,3 +29,11 @@ HW 2 -> Three Different Strategy of Microkernel using Round Robin Scheduler
 Midterm -> File System
         
         make (Part 3)
+       
+HW 3 -> Three Different Strategy of Microkernel in Assembly using Round Robin Scheduler
+
+        In spim directory to run:
+        sudo make install
+        ./spim -file SPIMOS_GTU_1.s
+        ./spim -file SPIMOS_GTU_2.s
+        ./spim -file SPIMOS_GTU_3.s
