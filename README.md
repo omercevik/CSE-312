@@ -40,5 +40,10 @@ HW 3 -> Three Different Strategy of Microkernel in Assembly using Round Robin Sc
 
 Final -> Virtual Memory Simulation
         
-        make (Part 2)
-        make (Part 3)
+        For Part 2
+        make
+        make run
+        
+        For Part 3
+        make
+        make run
