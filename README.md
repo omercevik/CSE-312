@@ -37,3 +37,8 @@ HW 3 -> Three Different Strategy of Microkernel in Assembly using Round Robin Sc
         ./spim -file SPIMOS_GTU_1.s
         ./spim -file SPIMOS_GTU_2.s
         ./spim -file SPIMOS_GTU_3.s
+
+Midterm -> Virtual Memory Simulation
+        
+        make (Part 2)
+        make (Part 3)
